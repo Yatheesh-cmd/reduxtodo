@@ -56,3 +56,30 @@ body {
     padding: 0.25rem 0.5rem;
   }
 }
+/* Make the outer wrapper a full-screen flexbox */
+.container-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full screen height */
+  padding: 1rem;
+}
+
+/* Style the glass card (your to-do box) */
+.glass-card {
+  width: 100%;
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* On small screens, make sure it fits well */
+@media (max-width: 576px) {
+  .glass-card {
+    padding: 1.5rem;
+    width: 100%;
+  }
+}
