@@ -1,0 +1,58 @@
+/* Modern linear gradient background for the body */
+body {
+  background: linear-gradient(135deg, #6b48ff 0%, #00ddeb 100%);
+  background-attachment: fixed;
+}
+
+/* Styling for the todo container with subtle gradient */
+.todo-container {
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.95) 0%, rgba(240, 240, 255, 0.9) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Gradient text for the title */
+.text-gradient {
+  background: linear-gradient(90deg, #ff6f91 0%, #6b48ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+/* Hover effects for buttons with gradient transition */
+.btn-primary {
+  background: linear-gradient(90deg, #6b48ff 0%, #00ddeb 100%);
+  border: none;
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(90deg, #ff6f91 0%, #6b48ff 100%);
+}
+
+.btn-success {
+  background: linear-gradient(90deg, #28a745 0%, #00ddeb 100%);
+  border: none;
+  transition: background 0.3s ease;
+}
+
+.btn-success:hover {
+  background: linear-gradient(90deg, #00ddeb 0%, #28a745 100%);
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .todo-container {
+    width: 95% !important;
+    padding: 1rem !important;
+  }
+
+  .text-gradient {
+    font-size: 1.5rem;
+  }
+
+  .btn-sm {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+  }
+}
